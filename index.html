@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wafer Defect Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 100px; /* Increased text size */
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="file"] {
+            padding: 20px; /* Increased padding */
+            border: 2px solid #ccc; /* Increased border width */
+            border-radius: 10px; /* Increased border radius */
+            margin-right: 20px; /* Increased margin */
+            width: calc(100% - 240px); /* Adjusted width */
+            max-width: 600px; /* Limit maximum width */
+            box-sizing: border-box; /* Added box-sizing */
+        }
+
+        button {
+            padding: 15px 30px; /* Increased padding */
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 10px; /* Increased border radius */
+            cursor: pointer;
+            font-size: 18px; /* Increased text size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wafer Defect Prediction</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*">
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
